@@ -64,6 +64,7 @@ namespace Image_Transfer
             lblImageSize.Content = String.Empty;
             lblWhitePixels.Content = String.Empty;
             lblBlackPixels.Content = String.Empty;
+            lblDrawingTime.Content = String.Empty;
         }
 
         private void btnAnalyze_Click(object sender, RoutedEventArgs e)
@@ -90,6 +91,7 @@ namespace Image_Transfer
                 lblImageSize.Content = String.Format("{0}w x {1}h", (int)imagePreview.Width, (int)imagePreview.Height);
                 lblWhitePixels.Content = WhitePixels.Count;
                 lblBlackPixels.Content = BlackPixels.Count;
+                lblDrawingTime.Content = String.Empty;
             }
         }
 
