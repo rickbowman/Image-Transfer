@@ -61,6 +61,7 @@ namespace Image_Transfer
                 ib.ImageSource = imagePreview;
                 splPreview.Background = ib;
             }
+            lblImageSize.Content = String.Empty;
             lblWhitePixels.Content = String.Empty;
             lblBlackPixels.Content = String.Empty;
         }
