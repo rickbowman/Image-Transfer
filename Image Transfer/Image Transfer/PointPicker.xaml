@@ -1,0 +1,15 @@
+﻿<Window x:Class="Image_Transfer.PointPicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Image_Transfer"
+        mc:Ignorable="d"
+        Height="1040" Width="1920" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Background="{DynamicResource WindowBackground}" x:Name="wndPointPicker">
+    <Window.Resources>
+        <SolidColorBrush x:Key="WindowBackground" Color="White" Opacity="0.25"/>
+    </Window.Resources>
+    <Grid>
+        <Label x:Name="lblMousePosition" Content="    Mouse Position:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="1040" Width="1920" FontSize="24" Foreground="Red" MouseMove="GetCursorPosition" MouseDown="SetStartingPoint"/>
+    </Grid>
+</Window>

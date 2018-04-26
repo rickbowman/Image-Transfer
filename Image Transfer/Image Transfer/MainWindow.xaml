@@ -1,0 +1,27 @@
+﻿<Window x:Class="Image_Transfer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Image Transfer" Height="515" Width="845" Closing="Window_Closing">
+    <Grid Background="#FF2D2D30">
+        <Label Content="Select Image:" Margin="10,10,0,0"/>
+        <Label Content="Analyze Image:" Margin="10,53,0,0"/>
+
+        <Button x:Name="btnBrowse" Content="Browse" Margin="228,10,0,0" Click="btnBrowse_Click"/>
+        <Button x:Name="btnAnalyze" Content="Analyze" Margin="228,53,0,0" Click="btnAnalyze_Click"/>
+        <Button x:Name="btnDraw" Content="Draw" Margin="228,96,0,0" Click="btnDraw_Click"/>
+
+        <Label Content="White Pixels:" Margin="10,275,0,0"/>
+        <Label Content="Black Pixels:" Margin="10,318,0,0"/>
+        <Label Content="Image Size:" Margin="10,361,0,0"/>
+        <Label Content="Drawing Time:" Margin="10,404,0,0"/>
+        <Label x:Name="lblWhitePixels" HorizontalContentAlignment="Right" Margin="135,275,0,0" Width="198"/>
+        <Label x:Name="lblBlackPixels" HorizontalContentAlignment="Right" Margin="135,318,0,0" Width="198"/>
+        <Label x:Name="lblImageSize" HorizontalContentAlignment="Right" Margin="135,361,0,0" Width="198"/>
+        <Label x:Name="lblDrawingTime" HorizontalContentAlignment="Right" Margin="135,404,0,0" Width="198"/>
+
+        <StackPanel x:Name="splPreview" HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="440" Margin="370,10,0,0"/>
+    </Grid>
+</Window>
