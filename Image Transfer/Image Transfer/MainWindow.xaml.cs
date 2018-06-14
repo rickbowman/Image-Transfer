@@ -107,7 +107,7 @@ namespace Image_Transfer
                 {
                     //move the mouse cursor
                     SetCursorPos((picker.StartingPoint.X + point.X), (picker.StartingPoint.Y + point.Y));
-                    //simulate left mouse up and mouse down
+                    //simulate left mouse down and mouse up
                     mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, (uint)(picker.StartingPoint.X + point.X), (uint)(picker.StartingPoint.Y + point.Y), 0, 0);
                     //pause for 75 milliseconds
                     Thread.Sleep(75);

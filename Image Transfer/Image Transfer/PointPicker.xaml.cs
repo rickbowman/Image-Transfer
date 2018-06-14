@@ -28,9 +28,7 @@ namespace Image_Transfer
         //when the user clicks set the starting position to the point they clicked on
         private void SetStartingPoint(object sender, MouseButtonEventArgs e)
         {
-            StartingPoint = new System.Drawing.Point();
-            StartingPoint.X = System.Windows.Forms.Control.MousePosition.X;
-            StartingPoint.Y = System.Windows.Forms.Control.MousePosition.Y;
+            StartingPoint = new System.Drawing.Point(System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y);
             lblMousePosition.Content = MousePosition + StartingPosition;
         }
     }
