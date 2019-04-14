@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
 
 namespace Image_Transfer
@@ -7,8 +6,8 @@ namespace Image_Transfer
     public partial class PointPicker : Window
     {
         public System.Drawing.Point StartingPoint;
-        private string MousePosition { get { return String.Format("    Mouse Position: {0}, {1}\n", System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y); } }
-        private string StartingPosition { get { return String.Format("    Starting Point: {0}, {1}", StartingPoint.X, StartingPoint.Y); } }
+        private string MousePosition { get { return string.Format("    Mouse Position: {0}, {1}\n", System.Windows.Forms.Control.MousePosition.X, System.Windows.Forms.Control.MousePosition.Y); } }
+        private string StartingPosition { get { return string.Format("    Starting Point: {0}, {1}", StartingPoint.X, StartingPoint.Y); } }
 
         public PointPicker()
         {

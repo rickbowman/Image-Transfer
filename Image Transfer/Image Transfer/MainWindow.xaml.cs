@@ -61,10 +61,10 @@ namespace Image_Transfer
                 ib.ImageSource = imagePreview;
                 splPreview.Background = ib;
             }
-            lblImageSize.Content = String.Empty;
-            lblWhitePixels.Content = String.Empty;
-            lblBlackPixels.Content = String.Empty;
-            lblDrawingTime.Content = String.Empty;
+            lblImageSize.Content = string.Empty;
+            lblWhitePixels.Content = string.Empty;
+            lblBlackPixels.Content = string.Empty;
+            lblDrawingTime.Content = string.Empty;
         }
 
         private void btnAnalyze_Click(object sender, RoutedEventArgs e)
@@ -88,10 +88,10 @@ namespace Image_Transfer
                     }
                 }
                 //display image properties on user interface
-                lblImageSize.Content = String.Format("{0}w x {1}h", (int)imagePreview.Width, (int)imagePreview.Height);
+                lblImageSize.Content = string.Format("{0}w x {1}h", (int)imagePreview.Width, (int)imagePreview.Height);
                 lblWhitePixels.Content = WhitePixels.Count;
                 lblBlackPixels.Content = BlackPixels.Count;
-                lblDrawingTime.Content = String.Empty;
+                lblDrawingTime.Content = string.Empty;
             }
         }
 
